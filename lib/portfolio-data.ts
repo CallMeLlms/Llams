@@ -39,7 +39,7 @@ export const navigationItems: NavigationItem[] = [
   },
 
   {
-    label: "<3",
+    label: "Projects",
     href: "#"
   },
 ];

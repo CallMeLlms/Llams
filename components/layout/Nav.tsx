@@ -18,24 +18,16 @@ export default function Nav() {
             />
           </div>
 
-          <div>
-
-              <div className="flex flex-col items-end">
-                
-                <CursiveCapital
-                  text={navigationItems[1].label}
-                  href={navigationItems[1].href}
-                  cursiveClass="text-4xl font-black leading-[0.9] lg:text-xl"
-                  bodyClass="text-[12px]"
-                />
-                        
-                <CursiveCapital
-                  text={navigationItems[2].label}
-                  href={navigationItems[2].href}
-                  cursiveClass="text-4xl font-black leading-[0.9] lg:text-xl"
-                  bodyClass="text-[12px] leading-[0.95]"
-                />
-              </div>
+          <div className="flex flex-col items-end gap-2">
+                {navigationItems.slice(1).map((item) => (
+                  <CursiveCapital
+                    key={item.href}
+                    text={item.label}
+                    href={item.href}
+                    cursiveClass="text-4xl font-black leading-[0.9] lg:text-xl"
+                    bodyClass="text-[12px] leading-[0.95]"
+                  />
+                ))}
           </div>
 
           
