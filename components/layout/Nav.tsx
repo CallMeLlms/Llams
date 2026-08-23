@@ -13,7 +13,7 @@ export default function Nav() {
           <div>
             <CursiveCapital
               text={navigationItems[0].label}
-              cursiveClass="text-4xl font-black leading-[0.9] lg:text-4xl"
+              cursiveClass="text-4xl leading-[0.9] lg:text-4xl"
               bodyClass="text-[18px] leading-[0.95]"
             />
           </div>
@@ -24,7 +24,7 @@ export default function Nav() {
                     key={item.href}
                     text={item.label}
                     href={item.href}
-                    cursiveClass="text-4xl font-black leading-[0.9] lg:text-xl"
+                    cursiveClass="text-4xl leading-[0.9] lg:text-xl"
                     bodyClass="text-[12px] leading-[0.95]"
                   />
                 ))}

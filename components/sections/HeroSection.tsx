@@ -8,7 +8,7 @@ export default function HeroSection() {
         <h1 className="flex max-w-full flex-row items-center justify-center gap-1 text-center leading-none tracking-normal sm:flex-row sm:items-end sm:gap-0">
           <span className="flex items-end justify-center">
             <span
-              className="[font-family:var(--font-mea-culpa)] text-6xl font-black leading-[0.9] sm:text-8xl lg:text-8xl"
+              className="[font-family:var(--font-mea-culpa)] text-6xl leading-[0.9] sm:text-8xl lg:text-8xl"
             >
               J
             </span>
@@ -20,7 +20,7 @@ export default function HeroSection() {
           </span>
           <span className="flex items-end justify-center">
             <span
-              className="[font-family:var(--font-mea-culpa)] text-6xl font-black leading-[0.9] sm:text-8xl lg:text-8xl"
+              className="[font-family:var(--font-mea-culpa)] text-6xl leading-[0.9] sm:text-8xl lg:text-8xl"
             >
               L
             </span>

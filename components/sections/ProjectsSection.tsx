@@ -11,7 +11,7 @@ export default function ProjectsSection() {
         <div className="mb-8 flex items-end justify-between gap-4 border-b pb-4">
           <div className="flex items-end">
             <h2
-              className="[font-family:var(--font-mea-culpa)] text-5xl font-black leading-none sm:text-8xl"
+              className="[font-family:var(--font-mea-culpa)] text-5xl leading-none sm:text-8xl"
             >
               P
             </h2>
