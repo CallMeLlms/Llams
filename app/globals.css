@@ -8,8 +8,9 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: Architects Daughter;
-  --font-mono: Architects Daughter;
-  --font-heading: var(--font-sans);
+  --font-newsreader: var(--font-newsreader);
+  --font-mea-culpa: var(--font-mea-culpa);
+  --font-dm-mono: var(--font-dm-mono);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -46,7 +47,6 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
-  --font-serif: Architects Daughter;
   --radius: 0px;
   --tracking-tighter: calc(var(--tracking-normal) - 0.05em);
   --tracking-tight: calc(var(--tracking-normal) - 0.025em);
@@ -90,68 +90,6 @@ body {
   background-size: 100% auto;
 }
 
-.custom-cursor {
-  display: none;
-}
-
-@media (pointer: fine) {
-  html.has-custom-cursor,
-  html.has-custom-cursor * {
-    cursor: none !important;
-  }
-
-  .custom-cursor {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2147483647;
-    pointer-events: none;
-    opacity: 0;
-    transform: translate3d(-999px, -999px, 0);
-    will-change: transform, opacity;
-  }
-
-  .custom-cursor[data-visible="true"] {
-    opacity: 1;
-  }
-
-  .custom-cursor-dot {
-    width: 7px;
-    height: 7px;
-    border-radius: 9999px;
-    background: var(--foreground);
-    mix-blend-mode: multiply;
-  }
-
-  .custom-cursor-dot[data-active="true"] {
-    opacity: 0.72;
-  }
-
-  .custom-cursor-ring {
-    width: 28px;
-    height: 28px;
-    border: 1px solid var(--foreground);
-    border-radius: 9999px;
-    background: rgb(255 255 255 / 0.04);
-    transition:
-      opacity 120ms ease,
-      background-color 120ms ease,
-      border-color 120ms ease;
-  }
-
-  .custom-cursor-ring[data-active="true"] {
-    border-width: 2px;
-    background: rgb(0 0 0 / 0.08);
-  }
-}
-
-@media (pointer: fine) and (prefers-reduced-motion: reduce) {
-  .custom-cursor-ring {
-    transition: none;
-  }
-}
-
 :root {
   --background: oklch(0.9761 0 0);
   --foreground: oklch(0 0 0);
@@ -187,8 +125,6 @@ body {
   --sidebar-ring: oklch(0.5999 0 0);
   --destructive-foreground: oklch(1.0000 0 0);
   --font-sans: Architects Daughter;
-  --font-serif: Architects Daughter;
-  --font-mono: Architects Daughter;
   --shadow-color: #000000;
   --shadow-opacity: 0.1;
   --shadow-blur: 2px;
@@ -243,8 +179,6 @@ body {
   --destructive-foreground: oklch(0 0 0);
   --radius: 0px;
   --font-sans: Architects Daughter;
-  --font-serif: Architects Daughter;
-  --font-mono: Architects Daughter;
   --shadow-color: #000000;
   --shadow-opacity: 0.1;
   --shadow-blur: 2px;

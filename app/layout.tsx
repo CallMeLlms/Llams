@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
-import { Architects_Daughter } from "next/font/google";
+import {
+  Architects_Daughter,
+  Newsreader,
+  Mea_Culpa,
+  DM_Mono,
+} from "next/font/google";
 
 import "./globals.css";
 
@@ -9,16 +14,21 @@ const fontSans = Architects_Daughter({
   weight: "400",
 });
 
-const fontSerif = Architects_Daughter({
+const fontSerif = Newsreader({
   subsets: ["latin"],
-  variable: "--font-serif",
-  weight: "400",
+  variable: "--font-newsreader",
 });
 
-const fontMono = Architects_Daughter({
+const fontScript = Mea_Culpa({
   subsets: ["latin"],
-  variable: "--font-mono",
   weight: "400",
+  variable: "--font-mea-culpa",
+});
+
+const fontMono = DM_Mono({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-dm-mono",
 });
 
 export const metadata: Metadata = {
@@ -34,7 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full">
       <body
-        className={`${fontSans.variable} ${fontSerif.variable} ${fontMono.variable} flex min-h-full flex-col antialiased`}
+        className={`${fontSans.variable} ${fontSerif.variable} ${fontScript.variable} ${fontMono.variable} flex min-h-full flex-col antialiased`}
       >
         {children}
       </body>

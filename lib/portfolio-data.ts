@@ -25,12 +25,22 @@ export const portfolioName = "Llams";
 
 export const navigationItems: NavigationItem[] = [
   {
+    label: "Llams",
+    href: "#",
+  },
+  
+  {
     label: "Github",
     href: "https://github.com/CallMeLlms",
   },
   {
     label: "LinkedIn",
     href: "https://ph.linkedin.com/in/justine-llamera-4107842a3",
+  },
+
+  {
+    label: "<3",
+    href: "#"
   },
 ];
 
