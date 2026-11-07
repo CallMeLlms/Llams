@@ -4,7 +4,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 const fontPixelta = localFont({
-  src: "../public/fonts/PixeltaRegular-lxoDw.ttf",
+  src: "../../public/fonts/PixeltaRegular-lxoDw.ttf",
   variable: "--font-pixelta",
   display: "swap",
   weight: "400",
