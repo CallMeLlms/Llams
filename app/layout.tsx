@@ -1,39 +1,18 @@
 import type { Metadata } from "next";
-import {
-  Architects_Daughter,
-  Newsreader,
-  Mea_Culpa,
-  DM_Mono,
-} from "next/font/google";
+import localFont from "next/font/local";
 
 import "./globals.css";
 
-const fontSans = Architects_Daughter({
-  subsets: ["latin"],
-  variable: "--font-sans",
+const fontPixelta = localFont({
+  src: "../public/fonts/PixeltaRegular-lxoDw.ttf",
+  variable: "--font-pixelta",
+  display: "swap",
   weight: "400",
-});
-
-const fontSerif = Newsreader({
-  subsets: ["latin"],
-  variable: "--font-newsreader",
-});
-
-const fontScript = Mea_Culpa({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--font-mea-culpa",
-});
-
-const fontMono = DM_Mono({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--font-dm-mono",
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "A personal portfolio built with Next.js.",
+  title: "Justine Llamera",
+  description: "Justine Llamera — Full Stack Developer.",
 };
 
 export default function RootLayout({
@@ -43,9 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full">
-      <body
-        className={`${fontSans.variable} ${fontSerif.variable} ${fontScript.variable} ${fontMono.variable} flex min-h-full flex-col antialiased`}
-      >
+      <body className={`${fontPixelta.variable} flex min-h-full flex-col antialiased`}>
         {children}
       </body>
     </html>
