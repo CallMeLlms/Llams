@@ -21,11 +21,16 @@ export type NavigationItem = {
   href: string;
 };
 
-export const portfolioName = "Llams";
+export const portfolioName = "Justine Llamera";
+
+export const brand: NavigationItem = {
+  label: portfolioName,
+  href: "/",
+};
 
 export const navigationItems: NavigationItem[] = [
   {
-    label: "Github",
+    label: "GitHub",
     href: "https://github.com/CallMeLlms",
   },
   {
