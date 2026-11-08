@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { fontPixelta } from "@/utils/font";
 import SmoothScroll from "@/components/motion/SmoothScroll";
+import Loader from "@/components/loader/Loader";
 import "./globals.css";
 import "lenis/dist/lenis.css";
 
@@ -17,7 +18,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`h-full ${fontPixelta.variable}`}>
       <body className="flex min-h-full flex-col antialiased">
-        <SmoothScroll>{children}</SmoothScroll>
+
+        {/* Just a placeholder for now focusing on the
+         loader component design */}
+          <SmoothScroll>
+            <Loader/>
+          </SmoothScroll>
       </body>
     </html>
   );
