@@ -1,14 +1,8 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
-
+import { fontPixelta } from "@/utils/font";
+import SmoothScroll from "@/components/motion/SmoothScroll";
 import "./globals.css";
-
-const fontPixelta = localFont({
-  src: "../../public/fonts/PixeltaRegular-lxoDw.ttf",
-  variable: "--font-pixelta",
-  display: "swap",
-  weight: "400",
-});
+import "lenis/dist/lenis.css";
 
 export const metadata: Metadata = {
   title: "Justine Llamera",
@@ -21,9 +15,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full">
-      <body className={`${fontPixelta.variable} flex min-h-full flex-col antialiased`}>
-        {children}
+    <html lang="en" className={`h-full ${fontPixelta.variable}`}>
+      <body className="flex min-h-full flex-col antialiased">
+        <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>
   );

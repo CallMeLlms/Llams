@@ -5,9 +5,8 @@ export default function HeroSection() {
       className="flex min-h-screen items-center justify-center px-4 py-20 sm:px-8"
     >
       <div className="flex w-full max-w-6xl flex-col items-center gap-4">
-  
         <p className="max-w-full px-2 text-center text-xl leading-[0.95] tracking-normal sm:text-2xl lg:text-4xl">
-          Hero section
+          {`if you miss the train im on, You will know that i'm gone`}
         </p>
       </div>
     </section>

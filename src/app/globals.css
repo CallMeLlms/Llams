@@ -7,7 +7,7 @@
   --color-foreground: var(--foreground);
   --color-border: var(--border);
   --color-ring: var(--ring);
-  --font-pixelta: var(--font-pixelta);
+  --font-sans: var(--font-pixelta);
 }
 
 :root {
