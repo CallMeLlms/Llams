@@ -25,7 +25,7 @@ export default function Loader() {
       className="relative h-dvh w-full overflow-hidden bg-white"
     >
       <div
-        className="pointer-events-none absolute inset-0 z-10 flex justify-between px-4 py-6 sm:px-8 sm:py-10"
+        className="pointer-events-none absolute inset-0 z-10 flex justify-between px-4 py-6 sm:px-14 sm:py-10"
       >
         <div className="flex flex-col self-start">
           <div className="flex flex-col">
@@ -36,7 +36,7 @@ export default function Loader() {
         </div>
 
         <div className="flex flex-col justify-end self-end">
-          <p className="text-sm text-black sm:text-2xl lg:text-3xl">
+          <p className="text-sm text-blue-700 sm:text-2xl lg:text-3xl">
             Quick links
           </p>
 
@@ -45,7 +45,7 @@ export default function Loader() {
               <a
                 key={itm.href}
                 href={itm.href}
-                className="pointer-events-auto w-fit cursor-pointer justify-end text-sm text-black sm:text-xl lg:text-2xl"
+                className="pointer-events-auto w-fit cursor-pointer justify-end text-sm text-blue-700 sm:text-xl lg:text-2xl"
                 target="_blank"
                 rel="noopener noreferrer"
               >
